@@ -1,4 +1,4 @@
-<h1 align="center">🏮 LANTERN: A Machine Learning Framework for Lipid Nanoparticle Transfection Efficiency Prediction</h1>
+<h1 align="center">A Machine Learning Benchmarking Framework for Lipid Nanoparticle Transfection Efficiency Prediction</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/></a>
@@ -6,14 +6,14 @@
 </p>
 
 <p align="justify">
-<strong>LANTERN</strong> (Lipid nANoparticle Transfection Efficiency pRedictioN) is a machine learning framework for predicting the transfection efficiency of ionizable lipids used in lipid nanoparticle (LNP)-mediated RNA delivery. LANTERN addresses key limitations in existing approaches by combining high-quality curated data, chemically meaningful molecular representations, and rigorous model evaluation.
+<strong>LANTERN</strong> (Lipid nANoparticle Transfection Efficiency pRedictioN) is a machine learning framework for predicting the transfection efficiency of ionizable lipids used in lipid nanoparticle (LNP)-mediated RNA delivery. This framework addresses key limitations in existing approaches by combining high-quality curated data, chemically meaningful molecular representations, and rigorous model evaluation.
 </p>
 
 <p align="justify">
-The framework enables robust benchmarking of diverse ML models—including traditional regressors and neural architectures—based on interpretable fingerprint-based and learned molecular features. LANTERN models significantly outperform AGILE, a prior state-of-the-art model, achieving an R² of 0.8161 and Pearson r of 0.9053 using a multi-layer perceptron trained on combined Morgan fingerprints and expert descriptors.
+The framework enables robust benchmarking of diverse ML models—including traditional regressors and neural architectures—based on interpretable fingerprint-based and learned molecular features. The models significantly outperform AGILE, a prior state-of-the-art model, achieving an R² of 0.8161 and Pearson r of 0.9053 using a multi-layer perceptron trained on combined Morgan fingerprints and expert descriptors.
 </p>
 
-LANTERN is designed as a modular and extensible platform for:
+This framework is designed as a modular and extensible platform for:
 - Predicting transfection efficiency from SMILES-based lipid structures  
 - Benchmarking ML models on general molecular regression tasks  
 - Accelerating LNP design in RNA-based therapeutics
@@ -27,7 +27,7 @@ LANTERN is designed as a modular and extensible platform for:
     
 ## ⚙️ Environment Setup
 
-We recommend using [Conda](https://docs.conda.io/en/latest/) to manage dependencies for LANTERN.
+We recommend using [Conda](https://docs.conda.io/en/latest/) to manage dependencies.
 
 #### 📦 Install via `lantern.yml`
 
@@ -75,7 +75,7 @@ python scripts/extract_fingerprint.py --mode circular --data_name YOUR_DATASET -
 python scripts/extract_fingerprint.py --mode expert --data_name YOUR_DATASET --save_path data/fingerprints/YOUR_DATASET
 ```
 
-This will generate required fingerprint files in: `data/fingerprints/YOUR_DATASET/`
+This will generate the required fingerprint files in: `data/fingerprints/YOUR_DATASET/`
 
 ### 3. Run Inference
 
